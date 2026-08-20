@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function(){
+  try {
+    var raw = localStorage.getItem('hassanSiteData_v1');
+    if (raw) {
+      var d = JSON.parse(raw);
+      if (d && d.theme) document.documentElement.setAttribute('data-theme', d.theme);
+    }
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Hassan | Shopify Expert & Digital Marketer</title>
+<meta name="description" content="Get in touch with Hassan for Shopify store design, development, and Meta & TikTok ad management projects." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="ambient-bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+<div class="grain"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Hassan<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary nav-cta">
+      Let's Talk
+      <span class="btn-arrow">→</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html">About</a>
+  <a href="awards.html">Awards</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow reveal" id="contactHeaderEyebrow">Contact</span>
+    <h1 class="reveal reveal-delay-1" id="contactHeaderHeading">Let's build something that converts</h1>
+    <p class="reveal reveal-delay-2" id="contactHeaderSub">Tell me a bit about your store and where you want it to go — I'll get back to you within a day.</p>
+  </div>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="section" style="padding-top: 20px;">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- CONTACT INFO -->
+      <aside class="contact-info-card reveal">
+        <h3>Get in Touch</h3>
+        <p>Reach out directly, or use the form and I'll follow up with next steps.</p>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </div>
+          <div class="contact-method-text">
+            <div class="contact-method-label">Email</div>
+            <a href="mailto:hello@hassan-shopify.com" class="contact-method-value" id="contactEmail">hello@hassan-shopify.com</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8.6 20L3 21Z"/><path d="M8.5 9.5c0 3.5 3 6.5 6.5 6.5"/></svg>
+          </div>
+          <div class="contact-method-text">
+            <div class="contact-method-label">WhatsApp</div>
+            <a href="https://wa.me/923001234567" target="_blank" rel="noopener" class="contact-method-value" id="contactWhatsapp">+92 300 1234567</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z"/></svg>
+          </div>
+          <div class="contact-method-text">
+            <div class="contact-method-label">Based In</div>
+            <span class="contact-method-value" id="contactLocation">Punjab, Pakistan · Remote Worldwide</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <div class="contact-socials-label">Find Me On</div>
+          <div class="social-row">
+            <a href="https://www.upwork.com/freelancers/~placeholderprofile" target="_blank" rel="noopener" class="social-icon" aria-label="Upwork Profile" data-social="upwork">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a4 4 0 0 1 0 8 4 4 0 0 1-3.8-2.7L12 9v9M7 8v4a3 3 0 1 0 3-3"/></svg>
+            </a>
+            <a href="https://instagram.com/hassan.shopify" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" data-social="instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/hassan-shopify" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" data-social="linkedin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap reveal reveal-delay-1">
+
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+          <span>Thanks for reaching out — this is a demo form for now, so nothing was sent yet. Once connected via the Admin Panel, submissions will reach me directly.</span>
+        </div>
+
+        <p class="form-intro" id="formIntro">Have a Shopify store or ad management project in mind? Fill out the form below and let's talk about how to get it moving.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field-group">
+              <label class="field-label" for="name">Name</label>
+              <input class="field-input" type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="email">Email</label>
+              <input class="field-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label class="field-label" for="projectType">Project Type</label>
+              <select class="field-select" id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a project type</option>
+                <option value="small-store-setup">Small Store Setup</option>
+                <option value="custom-store-build">Custom Store Build</option>
+                <option value="elite-store-build">Elite Store Build</option>
+                <option value="ads-management">Meta &amp; TikTok Ads Management</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="budget">Budget</label>
+              <select class="field-select" id="budget" name="budget" required>
+                <option value="" disabled selected>Select a budget range</option>
+                <option value="under-50">Under $50</option>
+                <option value="50-150">$50 – $150</option>
+                <option value="150-500">$150 – $500</option>
+                <option value="500-plus">$500+</option>
+                <option value="not-sure">Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="message">Message</label>
+            <textarea class="field-textarea" id="message" name="message" placeholder="Tell me a bit about your store and what you're looking to achieve..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message
+            <span class="btn-arrow">→</span>
+          </button>
+
+          <p class="form-note">I typically reply within 24 hours.</p>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Hassan<span>.</span></a>
+        <p>Shopify expert and digital marketer helping brands build stores that convert, not just look good.</p>
+        <div class="social-row">
+          <a href="https://www.upwork.com/freelancers/~placeholderprofile" target="_blank" rel="noopener" class="social-icon" aria-label="Upwork" data-social="upwork">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a4 4 0 0 1 0 8 4 4 0 0 1-3.8-2.7L12 9v9M7 8v4a3 3 0 1 0 3-3"/></svg>
+          </a>
+          <a href="https://instagram.com/hassan.shopify" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" data-social="instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/hassan-shopify" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" data-social="linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="awards.html">Awards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Store Setup</a></li>
+          <li><a href="services.html">Redesign &amp; CRO</a></li>
+          <li><a href="services.html">Meta &amp; TikTok Ads</a></li>
+          <li><a href="services.html">SEO &amp; Speed</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@hassan-shopify.com" data-mailto data-mailto-text>hello@hassan-shopify.com</a></li>
+          <li><a href="https://wa.me/923001234567" target="_blank" rel="noopener" data-whatsapp-link>WhatsApp</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~placeholderprofile" target="_blank" rel="noopener" data-social="upwork">Upwork Profile</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Hassan. All rights reserved.</span>
+      <span>Built for brands that want to grow.</span>
+      <a href="admin/index.html" style="color: var(--text-faint); font-size: 12px;">Admin</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site-data.js"></script>
+<script src="js/site-loader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

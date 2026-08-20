@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function(){
+  try {
+    var raw = localStorage.getItem('hassanSiteData_v1');
+    if (raw) {
+      var d = JSON.parse(raw);
+      if (d && d.theme) document.documentElement.setAttribute('data-theme', d.theme);
+    }
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Hassan | Shopify Expert & Digital Marketer</title>
+<meta name="description" content="A look at Shopify stores designed and developed by Hassan, plus ad campaigns and growth projects, including Sneekars Hub, Watchify, and an 842% growth campaign." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="ambient-bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+<div class="grain"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Hassan<span>.</span></a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary nav-cta">
+      Let's Talk
+      <span class="btn-arrow">→</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html">About</a>
+  <a href="awards.html">Awards</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow reveal" id="portfolioHeaderEyebrow">Portfolio</span>
+    <h1 class="reveal reveal-delay-1" id="portfolioHeaderHeading">Work built to sell, not just look good</h1>
+    <p class="reveal reveal-delay-2" id="portfolioHeaderSub">A mix of Shopify store builds and paid-growth campaigns — each one solving a different problem for a different brand.</p>
+  </div>
+</section>
+
+<!-- FILTER + GRID -->
+<section class="section" style="padding-top: 20px;">
+  <div class="container">
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="filter-tab active" data-filter="all">All Work <span class="filter-count">3</span></button>
+      <button class="filter-tab" data-filter="design">Store Design &amp; Development <span class="filter-count">2</span></button>
+      <button class="filter-tab" data-filter="ads">Ads &amp; Growth Campaigns <span class="filter-count">1</span></button>
+      <button class="filter-tab" data-filter="seo">SEO &amp; Conversion Projects <span class="filter-count">0</span></button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="project-card" data-category="design"
+           data-title="Sneekars Hub"
+           data-cat-label="Store Design &amp; Development"
+           data-desc="A footwear Shopify store designed and developed from scratch, with a bold dark theme, sharp product photography layout, and clean, distraction-free product pages built to move visitors straight to checkout."
+           data-tags="Shopify · Theme Development · UI Design · CRO">
+        <div class="project-thumb">
+          <div class="project-thumb-visual mock-sneekars-full">
+            <div class="project-thumb-icon">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#8FBF5F" stroke-width="0.7"><path d="M2 18c2-4 4-6 8-6 3 0 3 2 6 2 3 0 4-2 6-2v6H2Z"/></svg>
+            </div>
+          </div>
+          <span class="project-cat-pill">Store Design</span>
+          <button class="project-expand" aria-label="View project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </button>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Sneekars Hub</h3>
+          <p class="project-desc">Designed and built a bold, dark-themed footwear store from scratch.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="design"
+           data-title="Watchify"
+           data-cat-label="Store Design &amp; Development"
+           data-desc="A premium, minimal Shopify store built for a watch brand, using generous whitespace, refined typography, and a streamlined layout that matches the feel of a luxury product line and builds buyer trust."
+           data-tags="Shopify · Premium UI · Minimal Layout · Luxury Branding">
+        <div class="project-thumb">
+          <div class="project-thumb-visual mock-watchify-full">
+            <div class="project-thumb-icon">
+              <svg width="110" height="110" viewBox="0 0 24 24" fill="none" stroke="#8FBF5F" stroke-width="0.7"><circle cx="12" cy="12" r="7"/><path d="M12 9v3l2 2M10 2h4M10 22h4"/></svg>
+            </div>
+          </div>
+          <span class="project-cat-pill">Store Design</span>
+          <button class="project-expand" aria-label="View project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </button>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Watchify</h3>
+          <p class="project-desc">Built a premium, minimal watch store layout matching a luxury product line.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ads"
+           data-title="Dropshipping Growth Project"
+           data-cat-label="Ads &amp; Growth Campaigns"
+           data-desc="Managed Meta and TikTok ad campaigns end to end for a dropshipping store — audience testing, creative iteration, and budget scaling — growing total sales by 842% during the campaign period."
+           data-tags="Meta Ads · TikTok Ads · Campaign Strategy · Scaling">
+        <div class="project-thumb">
+          <div class="project-thumb-visual mock-dropship-full">
+            <div class="project-thumb-icon">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#8FBF5F" stroke-width="0.7"><path d="M3 17 9 11 13 15 21 7"/><path d="M15 7h6v6"/></svg>
+            </div>
+          </div>
+          <span class="project-cat-pill">Ads &amp; Growth</span>
+          <button class="project-expand" aria-label="View project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </button>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Dropshipping Growth Project</h3>
+          <p class="project-desc">Managed Meta &amp; TikTok ad campaigns that grew sales by 842%.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Empty state shown by JS when a filter has zero visible projects -->
+    <div class="portfolio-grid" id="emptyGrid" style="display: none;">
+      <div class="empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8 15c1 1.2 2.4 2 4 2s3-.8 4-2"/></svg>
+        <h3>More projects coming soon</h3>
+        <p>This category is being updated — new SEO &amp; conversion case studies will be added here through the Admin Panel.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-panel">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lightbox-image" id="lightboxImage"></div>
+    <div class="lightbox-body">
+      <span class="lightbox-cat" id="lightboxCat"></span>
+      <h3 class="lightbox-title" id="lightboxTitle"></h3>
+      <p class="lightbox-desc" id="lightboxDesc"></p>
+      <div class="lightbox-tags" id="lightboxTags"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CLOSING CTA -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="eyebrow" style="justify-content:center;">Let's Work Together</span>
+      <h2>Have a store in <span>mind for me?</span></h2>
+      <p>Whether it's a full build, a redesign, or an ads campaign — let's talk about what you're trying to grow.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">
+          Get In Touch
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="services.html" class="btn btn-outline">See My Services</a>
+      </div>
+      <p class="cta-email">Or email directly at <a href="mailto:hello@hassan-shopify.com" data-mailto data-mailto-text>hello@hassan-shopify.com</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Hassan<span>.</span></a>
+        <p>Shopify expert and digital marketer helping brands build stores that convert, not just look good.</p>
+        <div class="social-row">
+          <a href="https://www.upwork.com/freelancers/~placeholderprofile" class="social-icon" aria-label="Upwork" data-social="upwork" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a4 4 0 0 1 0 8 4 4 0 0 1-3.8-2.7L12 9v9M7 8v4a3 3 0 1 0 3-3"/></svg>
+          </a>
+          <a href="https://instagram.com/hassan.shopify" class="social-icon" aria-label="Instagram" data-social="instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/hassan-shopify" class="social-icon" aria-label="LinkedIn" data-social="linkedin" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="awards.html">Awards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Store Setup</a></li>
+          <li><a href="services.html">Redesign &amp; CRO</a></li>
+          <li><a href="services.html">Meta &amp; TikTok Ads</a></li>
+          <li><a href="services.html">SEO &amp; Speed</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@hassan-shopify.com" data-mailto data-mailto-text>hello@hassan-shopify.com</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+          <li><a href="https://www.upwork.com/freelancers/~placeholderprofile" target="_blank" rel="noopener" data-social="upwork">Upwork Profile</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Hassan. All rights reserved.</span>
+      <span>Built for brands that want to grow.</span>
+      <a href="admin/index.html" style="color: var(--text-faint); font-size: 12px;">Admin</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site-data.js"></script>
+<script src="js/site-loader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/portfolio.js"></script>
+</body>
+</html>
